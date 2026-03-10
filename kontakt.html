@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Beitreten — Kerbborsche Bräischboch e.V.</title>
+  <meta name="description" content="Kontaktiere die Kerbborsche oder werde Mitglied im Verein.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/logo.png" alt="Wappen">
+        <span>Kerbborsche</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Gurre</a></li>
+        <li><a href="kerb.html">Kerb 2025</a></li>
+        <li><a href="jubilaeum.html">20 Jahre</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="vorstand.html">Vorstand</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" style="background-image: url('assets/images/pic08.jpg');">
+    <div class="hero-content">
+      <h1>Kontakt & Beitreten</h1>
+      <p>Schreib uns oder werde Teil der Kerbborsche!</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Kontakt</span>
+        <h2>Schreib uns</h2>
+        <p>Fragen, Anregungen oder Interesse am Verein? Wir melden uns bei euch!</p>
+      </div>
+      <form class="form-grid" action="https://formspree.io/f/DEINE-ID" method="POST">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group full-width">
+          <label for="betreff">Betreff</label>
+          <select id="betreff" name="betreff">
+            <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
+            <option value="Mitgliedschaft">Mitgliedschaft</option>
+            <option value="Kerb">Kerb / Veranstaltungen</option>
+            <option value="Sonstiges">Sonstiges</option>
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="nachricht">Nachricht *</label>
+          <textarea id="nachricht" name="nachricht" required></textarea>
+        </div>
+        <div class="form-group full-width">
+          <label class="form-checkbox">
+            <input type="checkbox" required>
+            Ich stimme der Verarbeitung meiner Daten gemäß der <a href="datenschutz.html">Datenschutzerklärung</a> zu. *
+          </label>
+        </div>
+        <div class="form-group full-width">
+          <button type="submit" class="btn btn-primary">Nachricht senden →</button>
+        </div>
+      </form>
+      <p class="text-center mt-md" style="color: var(--color-text-muted); font-size: 0.9rem;">
+        Oder direkt per E-Mail: <a href="mailto:kontakt@kerbborsche-braeischboch.de">kontakt@kerbborsche-braeischboch.de</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Mitglied werden -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Mitmachen</span>
+        <h2>Mitglied werden</h2>
+        <p>Du möchtest bei den Kerbborsche mitmachen? So geht's.</p>
+      </div>
+
+      <!-- Voraussetzungen -->
+      <div style="max-width: 700px; margin: 0 auto var(--space-lg);">
+        <h3>Voraussetzungen</h3>
+        <ul style="margin: var(--space-sm) 0 0 var(--space-md);">
+          <li>Brensbacher Wurzeln oder eine längere Verbundenheit zum Ort</li>
+          <li>Keine aktive Mitgliedschaft in einem anderen Kerbverein</li>
+          <li>Bei Minderjährigen: Einverständnis der Erziehungsberechtigten</li>
+        </ul>
+      </div>
+
+      <!-- Steps -->
+      <div class="steps">
+        <div class="step">
+          <h4>Reinschnuppern</h4>
+          <p>Komm einfach zu unseren Treffen vorbei, lerne die Mitglieder und den Vorstand kennen.</p>
+        </div>
+        <div class="step">
+          <h4>Antrag stellen</h4>
+          <p>Fülle den Mitgliedsantrag aus und gib ihn beim Vorstand ab. Bei unter 18: mit Unterschrift der Eltern.</p>
+        </div>
+        <div class="step">
+          <h4>Dabei sein</h4>
+          <p>Auch passive Mitgliedschaft ist möglich — für alle, die uns finanziell unterstützen möchten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Dokumente</span>
+        <h2>Downloads</h2>
+      </div>
+      <div class="download-grid">
+        <div class="download-card">
+          <h4>Vereinssatzung</h4>
+          <p>Alle Infos über unseren Verein, den Vorstand und seine Zusammensetzung.</p>
+          <a href="assets/pdfs/vereinssatzung.pdf" class="btn btn-outline btn-sm" download>PDF herunterladen</a>
+        </div>
+        <div class="download-card">
+          <h4>Mitgliedsantrag</h4>
+          <p>Den ausgefüllten Antrag einfach beim Vorstand abgeben.</p>
+          <a href="assets/pdfs/mitgliedsantrag.pdf" class="btn btn-outline btn-sm" download>PDF herunterladen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Kerbborsche</h4>
+          <p>Kerbtraditionen, Events, Jugendförderung und mehr — seit 2007 in Brensbach.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/gurregsoat/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/kerbborsche_braeischboch" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://www.youtube.com/@kerbborschebraischboche.v.4891" target="_blank" rel="noopener" aria-label="YouTube">yt</a>
+            <a href="https://open.spotify.com/playlist/5pDSWXd1vFvZVyAqCkBYAi" target="_blank" rel="noopener" aria-label="Spotify">♫</a>
+          </div>
+        </div>
+        <div>
+          <h4>Seiten</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="kerb.html">Kerb 2025</a></li>
+            <li><a href="jubilaeum.html">20 Jahre Jubiläum</a></li>
+            <li><a href="kontakt.html">Kontakt & Beitreten</a></li>
+            <li><a href="vorstand.html">Vorstand</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Playlist</h4>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5pDSWXd1vFvZVyAqCkBYAi?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Kerbborsche Bräischboch e.V.</span>
+        <div class="footer-legal">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
