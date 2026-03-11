@@ -1,5 +1,28 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment
+.env
+.env.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# OS
 .DS_Store
+
+# Claude
 .claude/
+
+# Old static files (kept for reference)
 generate_report.py
 Website_Analysis_Kerbborsche.pdf
 Screen shots/
+
+# Supabase temp
+supabase/.temp/
